@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load account %}
+{% load socialaccount %}
+{% get_providers as socialaccount_providers %}
+{% block header %}
+     <link rel="stylesheet" href="{% static 'CSS/style.css' %}">
+{% endblock %}
+
+{% block content %}
+
+     <script>
+        if ( window.history.replaceState ) {
+            window.history.replaceState( null, null, window.location.href );
+        }
+     </script>
+
+    <a href="" >ВХОД</a>
+{% endblock %}
